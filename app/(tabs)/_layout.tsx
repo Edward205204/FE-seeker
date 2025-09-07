@@ -5,20 +5,21 @@ export default function RootLayout() {
     <Tabs
       screenOptions={{
         tabBarStyle: {
-          backgroundColor: '#f5f5f5',
+          backgroundColor: '#fff',
           borderTopWidth: 0,
           elevation: 0,
           shadowOpacity: 0
         },
-        tabBarActiveTintColor: '#6200ee',
-        tabBarInactiveTintColor: '#666666'
+        tabBarActiveTintColor: '#5985d8',
+        tabBarInactiveTintColor: '#666666',
+        headerShown: false
       }}
     >
       <Tabs.Screen
         name='index'
         options={{
           title: 'Home',
-          tabBarIcon: ({ color, size }) => <MaterialCommunityIcons name='calendar' color={color} size={size} />
+          tabBarIcon: ({ color, size }) => <MaterialCommunityIcons name='home' color={color} size={size} />
         }}
       />
     </Tabs>
